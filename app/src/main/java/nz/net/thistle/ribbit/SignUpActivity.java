@@ -35,7 +35,7 @@ public class SignUpActivity extends Activity {
                 username = username.trim();
                 password = password.trim();
                 email = email.trim();
-
+                // Show an error if the Username, Password or Email are blank
                 if (username.isEmpty() || password.isEmpty() || email.isEmpty()) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
                     builder.setMessage(getString(R.string.signup_error_message))
